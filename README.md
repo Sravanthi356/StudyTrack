@@ -1,9 +1,8 @@
 # StudyTrack
 
-StudyTrack is a Python-based Student Productivity Management System.
+StudyTrack is a command-line Student Productivity Management System built with Python and SQLite.
 
-It allows students to create, manage, search, filter, and track their study tasks. 
-The application uses SQLite to permanently store task data.
+It helps students organize study tasks, manage deadlines, track completion, and monitor productivity through simple statistics.
 
 ## Features
 
@@ -31,6 +30,16 @@ The application uses SQLite to permanently store task data.
 - Git
 - GitHub
 
+## How It Works
+
+The application is divided into three main Python modules:
+
+- `main.py` — Handles the user interface, menu, input validation, task operations, searching, and filtering.
+- `database.py` — Handles SQLite database creation and CRUD operations.
+- `statistics.py` — Calculates productivity statistics such as completed, pending, overdue tasks, and completion rate.
+
+Task data is stored in SQLite, allowing tasks to remain available even after restarting the application.
+
 ## Project Structure
 
 ```text
@@ -40,5 +49,4 @@ StudyTrack/
 ├── database.py
 ├── statistics.py
 ├── README.md
-├── .gitignore
-└── studytrack.db
+└── .gitignore
